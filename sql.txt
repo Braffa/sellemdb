@@ -1,0 +1,24 @@
+mysql --user=root --password=Braffa123 
+
+show databases;
+
+CREATE DATABASE testdb;
+
+SELECT User FROM mysql.user;
+
+CREATE USER 'braffa'@'localhost' IDENTIFIED BY 'braffapw';
+
+GRANT ALL PRIVILEGES ON * . * TO 'braffa'@'localhost';
+
+
+username - braffa
+password - braffapw
+
+
+CREATE DATABASE sellMyThings;
+
+CREATE USER 'sellem'@'localhost' IDENTIFIED BY 'lindsay23';
+
+use sellMyThings
+
+GRANT ALL PRIVILEGES ON *.* TO 'sellem'@'localhost';
