@@ -18,8 +18,8 @@ public class ProductSQL {
 		sql.append(" source VARCHAR(20),         ");
 		sql.append(" sourceid VARCHAR(20),       ");
 		sql.append(" title VARCHAR(100),         ");
-		sql.append(" crDate TIMESTAMP,           ");
-		sql.append(" updDate TIMESTAMP,          ");
+		sql.append(" CRDATE TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,");
+		sql.append(" UPDDATE TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP,");
 		sql.append(" PRIMARY KEY ( productId ))  ");
 		return sql.toString();
 	}

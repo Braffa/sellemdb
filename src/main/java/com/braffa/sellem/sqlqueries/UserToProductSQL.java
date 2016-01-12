@@ -12,8 +12,8 @@ public class UserToProductSQL {
 		sql.append(" (id INT NOT NULL AUTO_INCREMENT, ");
 		sql.append(" userId VARCHAR(20), " + " productId VARCHAR(20), ");
 		sql.append(" productIndex INT, ");
-		sql.append(" CRDATE TIMESTAMP,      ");
-		sql.append(" UPDDATE TIMESTAMP,     ");
+		sql.append(" CRDATE TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,");
+		sql.append(" UPDDATE TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP,");
 		sql.append(" PRIMARY KEY ( id ))");
 		return sql.toString();
 	}
