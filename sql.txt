@@ -22,3 +22,5 @@ CREATE USER 'sellem'@'localhost' IDENTIFIED BY 'lindsay23';
 use sellMyThings
 
 GRANT ALL PRIVILEGES ON *.* TO 'sellem'@'localhost';
+
+update registereduser set authoritylevel = "00" where userid = dave123;
