@@ -9,7 +9,7 @@ public class RegisteredUserTestData {
 				.firstname("Dave").lastname("Allen").password("kelly1233").telephone("0772 234654").build();
 		return registeredUser;
 	}
-
+	
 	public RegisteredUser setUpRegisteredUser2() {
 		RegisteredUser registeredUser = new RegisteredUser.RegisteredUserBuilder().authorityLevel("99").userId("gordon456").email("gordon@gmail.com")
 				.firstname("gordon").lastname("Mills").password("kelly1233").telephone("1111 4444444").build();
@@ -29,7 +29,7 @@ public class RegisteredUserTestData {
 	}
 
 	public RegisteredUser setUpRegisteredUser5() {
-		RegisteredUser registeredUser = new RegisteredUser.RegisteredUserBuilder().authorityLevel("99").userId("Braffa")
+		RegisteredUser registeredUser = new RegisteredUser.RegisteredUserBuilder().authorityLevel("99").userId("Bonny")
 				.email("dave.rogers@yahoo.co.uk").firstname("Dave").lastname("Rogers").password("kelly1233").telephone("01388 445566")
 				.build();
 		return registeredUser;
@@ -43,7 +43,7 @@ public class RegisteredUserTestData {
 	}
 
 	public RegisteredUser setUpRegisteredUser7() {
-		RegisteredUser registeredUser = new RegisteredUser.RegisteredUserBuilder().authorityLevel("99").userId("Braffa")
+		RegisteredUser registeredUser = new RegisteredUser.RegisteredUserBuilder().authorityLevel("99").userId("uglyface")
 				.email("andrew.jones@yahoo.co.uk").firstname("andrew").lastname("jones").password("amanda33").telephone("01642 356745")
 				.build();
 		return registeredUser;
@@ -55,5 +55,9 @@ public class RegisteredUserTestData {
 				.build();
 		return registeredUser;
 	}
-
+	public RegisteredUser setUpRegisteredUser9() {
+		RegisteredUser registeredUser = new RegisteredUser.RegisteredUserBuilder().authorityLevel("99").userId("Braffa").email("braffa@gmail.com")
+				.firstname("Dave").lastname("Brayfield").password("amanda33").telephone("0772 234654").build();
+		return registeredUser;
+	}
 }
